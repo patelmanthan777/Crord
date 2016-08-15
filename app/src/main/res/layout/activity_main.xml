@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <!-- We use a Toolbar so that our drawer can be displayed
+         in front of the action bar -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        app:logo="@drawable/ic_laucher_white"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:minHeight="?attr/actionBarSize" >
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/ad_container"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:minHeight="48dp"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:descendantFocusability="afterDescendants"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/start_capture"
+            android:layout_width="200dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="128dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_record"
+            android:text="@string/record"
+            android:textColor="@android:color/white" />
+
+
+        <me.s1rius.noone.ui.widget.CheckableRelativeLayout
+            android:id="@+id/mic"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_above="@id/start_capture"
+            android:layout_marginBottom="48dp"
+            android:paddingStart="60dp">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_micphone"
+                android:contentDescription="@string/mic"/>
+
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="46dp"
+                android:layout_centerVertical="true"
+                android:duplicateParentState="true"
+                android:focusable="false"
+                android:clickable="false"
+                android:enabled="false" />
+
+
+        </me.s1rius.noone.ui.widget.CheckableRelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ouput_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/mic"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            android:paddingLeft="60dp">
+
+            <ImageView
+                android:id="@+id/ic_file"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_file" />
+
+            <TextView
+                android:id="@+id/root_dir"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/ic_file"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mp4_suffix"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/ic_file"
+                android:layout_marginEnd="40dp"
+                android:gravity="left|center"
+                android:text=".mp4"
+                android:textColor="@color/grey_dark"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/output"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignTop="@id/mp4_suffix"
+                android:layout_marginLeft="12dp"
+                android:layout_toStartOf="@id/mp4_suffix"
+                android:layout_toEndOf="@id/ic_file"
+                android:gravity="end|center"
+                android:maxLength="14"
+                android:maxLines="1"
+                android:textColor="@color/grey_dark"
+                android:textColorHint="@color/grey_light" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Crord</string>
+    <string name="cancel">取消</string>
+    <string name="countdown_one">点这停止</string>
+    <string name="countdown_three">3..</string>
+    <string name="countdown_two">2..</string>
+    <string name="notification_captured_delete">删除</string>
+    <string name="notification_captured_share">分享</string>
+    <string name="notification_captured_subtitle">点击查看录制</string>
+    <string name="notification_captured_title"></string>
+    <string name="notification_crop_processing">正在裁剪...</string>
+    <string name="notification_please_wait">处理中, 请稍后</string>
+    <string name="notification_recording_subtitle">点击状态栏时间区域停止录制</string>
+    <string name="notification_recording_title">正在录制</string>
+    <string name="please_enable_draw_over_app_permission">请先打开悬浮窗权限</string>
+    <string name="please_enable_mic_permission">请先打开麦克风权限</string>
+    <string name="please_access_storage_permission">请先允许应用程序使用外部存储空间</string>
+    <string name="record">录制</string>
+    <string name="we_will_use_it_to_build_a_record_control_view">我们需要这个权限创建控制界面</string>
+    <string name="about">关于</string>
+    <string name="mic">micphone</string>
+</resources>

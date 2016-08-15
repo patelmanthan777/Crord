@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Crord</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="record">Record</string>
+    <string name="countdown_one">click here to stop</string>
+    <string name="countdown_two">2…</string>
+    <string name="countdown_three">3…</string>
+    <string name="notification_captured_title">Screen recording captured.</string>
+    <string name="notification_captured_subtitle">Touch to view your screen recording.</string>
+    <string name="notification_captured_share">Share</string>
+    <string name="notification_captured_delete">Delete</string>
+    <string name="notification_recording_title">Recording screen.</string>
+    <string name="notification_recording_subtitle">Touch the clock area to stop recording.</string>
+    <string name="please_access_storage_permission">please allow storage access</string>
+    <string name="notification_please_wait">Please wait</string>
+    <string name="notification_crop_processing">Croping...</string>
+    <string name="please_enable_mic_permission">pleas allow microphone access</string>
+    <string name="please_enable_draw_over_app_permission">please enable draw over app permission</string>
+    <string name="we_will_use_it_to_build_a_record_control_view">we will build a record control view with the permission</string>
+    <string name="about">About</string>
+    <string name="mic">micphone</string>
+
+    <array name="countdown">
+        <item>@string/countdown_three</item>
+        <item>@string/countdown_two</item>
+        <item>@string/countdown_one</item>
+    </array>
+</resources>
